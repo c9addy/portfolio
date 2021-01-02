@@ -1,7 +1,6 @@
 .DS_Store
 .dart_tool/package_config.json
 .packages
-assets/.DS_Store
 assets/FontManifest.json
 assets/fonts/AquateScript.ttf
 assets/fonts/Inconsolata-Regular.ttf
@@ -1914,3 +1913,4 @@ packages/pedantic/analysis_options.1.8.0.yaml
 packages/pedantic/analysis_options.1.9.0.yaml
 packages/pedantic/analysis_options.yaml
 packages/portfolio/.DS_Store
+packages/portfolio/ui/.DS_Store

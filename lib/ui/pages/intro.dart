@@ -253,7 +253,7 @@ class _IntroWidgetState extends State<IntroWidget> {
   Widget _buildTitle() {
     return Row(
       children: <Widget>[
-        _buildPortfolio(),
+        // _buildPortfolio(),
         SizedBox(
           width: ResponsiveWidget.isSmallScreen(context)
               ? MediaQuery.of(context).size.width * 0.10
@@ -280,39 +280,39 @@ class _IntroWidgetState extends State<IntroWidget> {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
-        // Image.network(
-        //   Assets.cookies,
-        //   height: 20.0,
-        //   color: Colors.white, //480.0
-        // ),
-        // SizedBox(width: 12.0),
-        // RichText(
-        //   text: TextSpan(
-        //     // Note: Styles for TextSpans must be explicitly defined.
-        //     // Child text spans will inherit styles from parent
-        //     style: TextStyle(
-        //       fontSize: 14.0,
-        //       color: Colors.black,
-        //     ),
-        //     children: <TextSpan>[
-        //       TextSpan(
-        //         text: Strings.this_web,
-        //         style: TextStyles.body.copyWith(
-        //           color: Colors.grey,
-        //           fontSize: 12.0,
-        //         ),
-        //       ),
-        //       TextSpan(
-        //         text: Strings.cookies,
-        //         style: TextStyles.body.copyWith(
-        //           color: Colors.white,
-        //           decoration: TextDecoration.lineThrough,
-        //           fontSize: 12.0,
-        //         ),
-        //       ),
-        //     ],
-        //   ),
-        // )
+        Image.network(
+          Assets.cookies,
+          height: 20.0,
+          color: Colors.white, //480.0
+        ),
+        SizedBox(width: 12.0),
+        RichText(
+          text: TextSpan(
+            // Note: Styles for TextSpans must be explicitly defined.
+            // Child text spans will inherit styles from parent
+            style: TextStyle(
+              fontSize: 14.0,
+              color: Colors.black,
+            ),
+            children: <TextSpan>[
+              TextSpan(
+                text: Strings.this_web,
+                style: TextStyles.body.copyWith(
+                  color: Colors.grey,
+                  fontSize: 12.0,
+                ),
+              ),
+              TextSpan(
+                text: Strings.cookies,
+                style: TextStyles.body.copyWith(
+                  color: Colors.white,
+                  decoration: TextDecoration.lineThrough,
+                  fontSize: 12.0,
+                ),
+              ),
+            ],
+          ),
+        )
       ],
     );
   }

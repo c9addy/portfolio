@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["flutter_web|lib/material.dart","portfolio|lib/constants/assets.dart","portfolio|lib/constants/strings.dart","portfolio|lib/constants/text_styles.dart","portfolio|lib/utils/screen/screen_utils.dart","portfolio|lib/widgets/circle_widget.dart","portfolio|lib/widgets/responsive_widget.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

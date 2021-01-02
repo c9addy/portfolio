@@ -27,9 +27,14 @@ class Strings {
       'I am a Student at IIITD 2022 Batch. I love programming, especially competitive programming and mobile development. I also love playing chess in my free time.';
 
   // skills:--------------------------------------------------------------------
-  static const String skills = 'Proj_\nects';
-  static const String education = 'Education';
+  static const String skills = 'Sk_\nills';
+  static const String educations = 'Educ_\nation';
+
+  static const String experience = 'Experience';
   static const String skills_i_have = 'What Skills I Have';
+  static const String projects = 'Proj_\nect';
+  static const String education = 'Education';
+  // static const String skills_i_have = 'What Skills I Have';
 
   static final skillsList = [
     'C++',

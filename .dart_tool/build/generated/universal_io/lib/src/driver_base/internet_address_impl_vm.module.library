@@ -1,0 +1,1 @@
+{"isEntrypoint":false,"deps":["universal_io|lib/src/ip_utils.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["io"],"hasMain":false}

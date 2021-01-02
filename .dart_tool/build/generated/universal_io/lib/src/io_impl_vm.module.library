@@ -1,0 +1,1 @@
+{"isEntrypoint":false,"deps":["universal_io|lib/src/browser_http_client_impl_vm.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["io"],"hasMain":false}

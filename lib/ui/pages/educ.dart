@@ -91,21 +91,7 @@ class _EducationsWidgetState extends State<EducationsWidget> {
                             height: MediaQuery.of(context).size.height * 0.03),
                         _buildEducation(
                             headingFontSize:
-                                MediaQuery.of(context).size.width * 0.012,
-                            strs: Strings.education,
-                            lis: Strings.educationList),
-                        // _buildProject(
-                        //     headingFontSize:
-                        //         MediaQuery.of(context).size.width * 0.012,
-                        //     strs: 'Project',
-                        //     lis: Strings.projectList),
-                        // Container(
-                        //   child: _buildEducation(
-                        //       headingFontSize:
-                        //           MediaQuery.of(context).size.width * 0.012,
-                        //       strs: 'Experience',
-                        //       lis: Strings.educationList),
-                        // )
+                                MediaQuery.of(context).size.width * 0.012),
                       ],
                     ),
                   ),
@@ -247,7 +233,7 @@ class _EducationsWidgetState extends State<EducationsWidget> {
                     SizedBox(height: MediaQuery.of(context).size.height * 0.03),
                     _buildEducation(),
                     SizedBox(height: MediaQuery.of(context).size.height * 0.03),
-                    // _buildSkillsList(context),
+                    _buildSkillsList(context),
                   ],
                 ),
                 SizedBox(height: MediaQuery.of(context).size.height * 0.10),
@@ -263,7 +249,7 @@ class _EducationsWidgetState extends State<EducationsWidget> {
   Widget _buildDesign() {
     return Center(
       child: Text(
-        'Educ_\nation',
+        Strings.skills,
         style: TextStyles.heading,
       ),
     );
@@ -272,7 +258,7 @@ class _EducationsWidgetState extends State<EducationsWidget> {
   Widget _buildSkills({double fontSize}) {
     return RichText(
       text: TextSpan(
-        text: 'Educ_\nation',
+        text: Strings.educations,
         style: TextStyles.sub_heading.copyWith(
           fontSize: fontSize,
         ),
@@ -326,56 +312,29 @@ class _EducationsWidgetState extends State<EducationsWidget> {
     );
   }
 
-  Widget _buildEducation({double headingFontSize, String strs, List lis}) {
+  Widget _buildEducation({double headingFontSize}) {
     return Column(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        // _buildEducationContainerHeading(fontSize: headingFontSize, strs: strs),
-        SizedBox(height: 8.0),
-        _buildEducationTimeline(headingFontSize: headingFontSize, lis: lis)
+        // _buildEducationContainerHeading(fontSize: headingFontSize),
+        // SizedBox(height: 8.0),
+        _buildEducationTimeline(headingFontSize: headingFontSize)
       ],
     );
   }
 
-  Widget _buildProject({double headingFontSize, String strs, List lis}) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        _buildEducationContainerHeading(fontSize: headingFontSize, strs: strs),
-        SizedBox(height: 8.0),
-        _buildProjectTimeline(headingFontSize: headingFontSize, lis: lis)
-      ],
-    );
-  }
+  // Widget _buildEducationContainerHeading({double fontSize}) {
+  //   return Text(
+  //     Strings.education,
+  //     style: TextStyles.body.copyWith(fontSize: fontSize),
+  //   );
+  // }
 
-  Widget _buildEducationContainerHeading({double fontSize, String strs}) {
-    return Text(
-      strs,
-      style: TextStyles.body.copyWith(fontSize: fontSize),
-    );
-  }
-
-  Widget _buildEducationTimeline({double headingFontSize, List lis}) {
-    final widgets = lis
+  Widget _buildEducationTimeline({double headingFontSize}) {
+    final widgets = Strings.educationList
         .map(
           (education) => _buildEducationTile(
-            education,
-            headingFontSize: headingFontSize,
-          ),
-        )
-        .toList();
-    return Column(
-      children: widgets,
-      mainAxisSize: MainAxisSize.min,
-    );
-  }
-
-  Widget _buildProjectTimeline({double headingFontSize, List lis}) {
-    final widgets = lis
-        .map(
-          (education) => _buildProjectTile(
             education,
             headingFontSize: headingFontSize,
           ),
@@ -406,32 +365,6 @@ class _EducationsWidgetState extends State<EducationsWidget> {
           ),
           Text(
             '${education.from}-${education.to}',
-            style: TextStyles.body,
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildProjectTile(Education education, {double headingFontSize}) {
-    return Padding(
-      padding: EdgeInsets.symmetric(vertical: 8.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          Text(
-            '${education.post} |${education.to}',
-            style: TextStyles.body.copyWith(
-              color: Colors.white,
-              fontSize: headingFontSize,
-            ),
-          ),
-          Text(
-            '${education.from}',
-            style: TextStyles.body,
-          ),
-          Text(
-            '${education.organization}',
             style: TextStyles.body,
           ),
         ],

@@ -1,0 +1,1 @@
+{"isEntrypoint":false,"deps":[],"parts":[],"conditionalDeps":[{"$default":"universal_io|lib/src/driver_base/internet_address_impl_vm.dart","dart.library.io":"universal_io|lib/src/driver_base/internet_address_impl_vm.dart","dart.library.js":"universal_io|lib/src/io_impl_js/internet_address.dart"}],"sdkDeps":[],"hasMain":false}

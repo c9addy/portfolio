@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["flutter_web|lib/gestures.dart","flutter_web|lib/material.dart","universal_html|lib/html.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

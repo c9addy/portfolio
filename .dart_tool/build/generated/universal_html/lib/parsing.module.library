@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["universal_html|lib/html.dart"],"parts":[],"conditionalDeps":[{"$default":"universal_html|lib/src/parsing/parsing_impl_browser.dart","dart.library.io":"universal_html|lib/src/parsing/parsing_impl_vm.dart"}],"sdkDeps":[],"hasMain":false}

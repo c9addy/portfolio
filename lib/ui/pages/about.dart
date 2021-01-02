@@ -44,8 +44,8 @@ class _AboutWidgetState extends State<AboutWidget> {
           ),
         ),
         Positioned(
-          left: MediaQuery.of(context).size.width * 0.29,
-          top: MediaQuery.of(context).size.width * 0.12,
+          left: MediaQuery.of(context).size.width * 0.16,
+          top: MediaQuery.of(context).size.width * 0.10,
           child: CircleWidget(
             width: 40,
             height: 40,
@@ -75,7 +75,7 @@ class _AboutWidgetState extends State<AboutWidget> {
                 Expanded(
                   flex: 1,
                   child: Padding(
-                    padding: const EdgeInsets.only(bottom: 120.0),
+                    // padding: const EdgeInsets.only(bottom: 120.0),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: <Widget>[
@@ -87,7 +87,7 @@ class _AboutWidgetState extends State<AboutWidget> {
                           innerRadius: 8.0,
                           circleColor: Color(0xFF0098a6),
                         ),
-                        SizedBox(width: 40.0),
+                        SizedBox(width: 30.0),
                         _buildAbout(
                             fontSize: MediaQuery.of(context).size.width * 0.12),
                       ],

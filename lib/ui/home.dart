@@ -5,10 +5,10 @@ import 'package:flutter_web/material.dart';
 import 'package:portfolio/constants/strings.dart';
 import 'package:portfolio/constants/text_styles.dart';
 import 'package:portfolio/ui/pages/about.dart';
-import 'package:portfolio/ui/pages/educ.dart';
 import 'package:portfolio/ui/pages/hire.dart';
 import 'package:portfolio/ui/pages/intro.dart';
-import 'package:portfolio/ui/pages/projects.dart';
+import 'package:portfolio/ui/pages/educ.dart';
+import 'package:portfolio/ui/pages/project.dart';
 import 'package:portfolio/ui/pages/skills.dart';
 import 'package:portfolio/utils/hover/custom_cursor_widget.dart';
 import 'package:portfolio/utils/screen/screen_utils.dart';
@@ -53,7 +53,6 @@ class _HomePageState extends State<HomePage> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: <Widget>[
-        _buildVerticalDivider(),
         _buildVerticalDivider(),
         _buildVerticalDivider(),
         _buildVerticalDivider(),
@@ -157,9 +156,9 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             IntroWidget(),
             AboutWidget(),
-            SkillsWidget(),
             EducationsWidget(),
-            // ProjectsWidget(),
+            ProjectsWidget(),
+            SkillsWidget(),
             HireWidget(),
           ],
         ),
@@ -175,9 +174,10 @@ class _HomePageState extends State<HomePage> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           IntroWidget(),
-          SkillsWidget(),
-          ProjectsWidget(),
           AboutWidget(),
+          EducationsWidget(),
+          ProjectsWidget(),
+          SkillsWidget(),
           HireWidget(),
           _buildSocialButtons(
             axis: Axis.horizontal,
