@@ -8,13 +8,6 @@ A portfolio build by using flutter for web.
   <img src="screenshots/portfolio.png">
 </p>
 
-## How to Create and Deploy
-Follow the links below to learn more about how to create and deploy web applications in flutter.
-
-* Flutter For Web: [A Complete Guide to Create & Run a Web Application](https://medium.com/@zubairehman.work/flutter-for-web-c75011a41956)
-
-* Flutter For Web: [A Complete Guide to Deploy a Web Application](https://medium.com/@zubairehman.work/flutter-for-web-a-complete-guide-to-deploy-a-web-application-3fa9463377a8)
-
 ## How to Use 
 
 **Step 1:**
@@ -22,7 +15,7 @@ Follow the links below to learn more about how to create and deploy web applicat
 Download or clone this repo by using the link below:
 
 ```
-https://github.com/zubairehman/Portfolio-Demo-1.git
+https://github.com/c9addy/portfolio.git
 ```
 
 **Step 2:**
@@ -35,7 +28,7 @@ flutter pub get
 
 **Step 3:**
 
-To use the Flutter SDK with the flutter_web preview make sure you have upgraded Flutter to at least v1.5.4 by running flutter upgrade from your machine. Follow the link to learn more about how to configure flutter for web: https://medium.com/@zubairehman.work/flutter-for-web-c75011a41956
+To use the Flutter SDK with the flutter_web preview make sure you have upgraded Flutter to at least v1.5.4 by running flutter upgrade from your machine.
 
 **Step 4:**
 
@@ -173,5 +166,3 @@ class _MyAppChildState extends State<MyAppChild> {
   }
 }
 ```
-# Thanks
-If you liked my work, don’t forget to ⭐ star the repo to show your support.
